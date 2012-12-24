@@ -148,7 +148,7 @@ $(function(){
 				min: 0000,
 				max: 2400,
 				step: 50,
-				values: [ 850 , 2000 ],
+				values: [ parseInt($('.main-filter .filter-list .bg[data-default-first-time]').attr('data-default-first-time')) , parseInt($('.main-filter .filter-list .bg[data-default-second-time]').attr('data-default-second-time')) ],
 				create: function( event, ui ){
 					$(this).find('a').append('<span></span>');
 				},
@@ -159,6 +159,7 @@ $(function(){
 			});
 			$(this).find('a:first span').text(intToTime($(this).slider('values' , 0)));
 			$(this).find('a:last span').text(intToTime($(this).slider('values' , 1)));
+			$('.main-filter .filter-list .bg[data-default-first-time]').text(intToTime($(this).slider('values' , 0)) + ' - ' + intToTime($(this).slider('values' , 1)));
 		});
 	};
 
