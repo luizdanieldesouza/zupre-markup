@@ -1675,31 +1675,15 @@ ul li{
 	margin:0 0 3px;
 }
 .vacancies-list p{margin:0 0 12px;}
-.vacancies-list dl{
-	overflow:hidden;
-	margin:0 0 5px;
-}
-.vacancies-list dt{
-	font-weight:bold;
-	float:left;
-	margin:0 4px 0 0;
-}
-.vacancies-list dd{
-	overflow:hidden;
-	margin:0;
-}
-.vacancies-list .add-info{padding:0 0 12px;}
-.vacancies-list .add-info > li{
+.vacancies-list ul{padding:0 0 12px;}
+.vacancies-list ul > li{
 	padding:0 0 1px;
 	background:none;
 }
-.vacancies-list .add-info dl{margin:0;}
-.vacancies-list .feedback{
-	margin:0;
+.vacancies-list em{
 	font:10px 'Circe Regular', Arial, Helvetica, sans-serif;
 	text-transform:uppercase;
 }
-.vacancies-list .feedback dt{font-weight:normal;}
 .error-section{
 	text-align:center;
 	font-size:14px;
