@@ -1,0 +1,3344 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1024">
+	<title>Zupre</title>
+	<link rel="stylesheet" href="css/fontface.css" type="text/css">
+	<link rel="stylesheet" href="css/all.css" type="text/css">
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="js/jquery.ui.js"></script>
+	<script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script>
+	<script type="text/javascript" src="js/jquery.customScroll.js"></script>
+	<script type="text/javascript" src="js/jquery.main.js"></script>
+</head>
+<body style="background:#9d9d9d url(images/bg-body.jpg)">
+	<div class="wrapper">
+		<header class="header">
+			<div class="holder">
+				<strong class="logo"><a href="#">Zupre</a></strong>
+				<nav class="nav">
+					<ul>
+						<li><a class="about" href="#">О Клубе</a></li>
+						<li><a class="services" href="#">Услуги</a></li>
+						<li class="active"><a class="schedule" href="#">Расписание</a></li>
+						<li><a class="cards" href="#">Клубные карты</a></li>
+					</ul>
+				</nav>
+				<ul class="contacts">
+					<li class="phone">+7 495 775 88 89</li>
+					<li>
+						<ul>
+							<li><a href="#" class="address">Москва, ул. Вятская, д. 27, корп. 12</a></li>
+							<li class="metro">«Савёловская»</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<div class="main">
+			<div class="main-holder">
+				<h1>РАСПИСАНИЕ</h1>
+				<section class="main-filter active">
+					<form action="#">
+						<div class="slide">
+							<div class="filter-bg">
+								<fieldset>
+									<h2>День недели</h2>
+									<div class="filter-box">
+										<ul class="filter-list">
+											<li><a class="opener" href="#"><span class="bg">Все</span></a></li>
+										</ul>
+										<div class="drop">
+											<div class="drop-bg">
+												<div class="scroll-holder">
+													<ul class="checkbox-list">
+														<li>
+															<input type="checkbox" data-add-option="all" data-name="name-1" name="checkbox-1" id="checkbox-1" checked="checked">
+															<label for="checkbox-1">Все</label>
+														</li>
+														<li>
+															<input type="checkbox" data-name="name-1" name="checkbox-2" id="checkbox-2">
+															<label for="checkbox-2">Понедельник</label>
+														</li>
+														<li>
+															<input type="checkbox" data-name="name-1" name="checkbox-3" id="checkbox-3">
+															<label for="checkbox-3">Вторник</label>
+														</li>
+														<li>
+															<input type="checkbox" data-name="name-1" name="checkbox-4" id="checkbox-4">
+															<label for="checkbox-4">Среда</label>
+														</li>
+														<li>
+															<input type="checkbox" data-name="name-1" name="checkbox-5" id="checkbox-5">
+															<label for="checkbox-5">Четверг</label>
+														</li>
+														<li>
+															<input type="checkbox" data-name="name-1" name="checkbox-6" id="checkbox-6">
+															<label for="checkbox-6">Пятница</label>
+														</li>
+														<li>
+															<input type="checkbox" data-name="name-1" name="checkbox-7" id="checkbox-7">
+															<label for="checkbox-7">Суббота</label>
+														</li>
+														<li>
+															<input type="checkbox" data-name="name-1" name="checkbox-8" id="checkbox-8">
+															<label for="checkbox-8">Воскресенье</label>
+														</li>
+													</ul>
+												</div>
+												<a class="btn-success" href="#">OK</a>
+											</div>
+										</div>
+									</div>
+								</fieldset>
+								<fieldset>
+									<h2>Время</h2>
+									<div class="filter-box">
+										<ul class="filter-list">
+											<li><a class="opener" href="#"><span class="bg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></a></li>
+										</ul>
+										<div class="drop">
+											<div class="drop-bg">
+												<div class="slide-range-holder">
+													<div class="slide-range"></div>
+												</div>
+												<a class="btn-success" href="#">OK</a>
+											</div>
+										</div>
+									</div>
+								</fieldset>
+								<fieldset>
+									<h2>тренировки</h2>
+									<div class="filter-box">
+										<ul class="filter-list">
+											<li><a class="opener" href="#"><span class="bg">Все</span></a></li>
+										</ul>
+										<div class="drop">
+											<div class="drop-bg">
+												<div class="scroll-holder">
+													<ul class="checkbox-list">
+														<li>
+															<input type="checkbox" data-add-option="all" data-name="name-2" name="checkbox-9" id="checkbox-9" checked="checked">
+															<label for="checkbox-9">Все</label>
+														</li>
+														<li>
+															<input type="checkbox" data-name="name-2" name="checkbox-10" id="checkbox-10">
+															<label for="checkbox-10">Групповые занятия</label>
+														</li>
+														<li>
+															<input type="checkbox" data-name="name-2" name="checkbox-11" id="checkbox-11">
+															<label for="checkbox-11">Единоборства</label>
+														</li>
+														<li>
+															<input type="checkbox" data-name="name-2" name="checkbox-12" id="checkbox-12">
+															<label for="checkbox-12">Сауны</label>
+														</li>
+														<li>
+															<input type="checkbox" data-name="name-2" name="checkbox-13" id="checkbox-13">
+															<label for="checkbox-13">Групповые занятия</label>
+														</li>
+														<li>
+															<input type="checkbox" data-name="name-2" name="checkbox-14" id="checkbox-14">
+															<label for="checkbox-14">Единоборства</label>
+														</li>
+														<li>
+															<input type="checkbox" data-name="name-2" name="checkbox-15" id="checkbox-15">
+															<label for="checkbox-15">Сауны</label>
+														</li>
+														<li>
+															<input type="checkbox" data-name="name-2" name="checkbox-16" id="checkbox-16">
+															<label for="checkbox-16">Групповые занятия</label>
+														</li>
+													</ul>
+												</div>
+												<a class="btn-success" href="#">OK</a>
+											</div>
+										</div>
+									</div>
+								</fieldset>
+								<fieldset>
+									<h2>Тренер</h2>
+									<div class="filter-box">
+										<ul class="filter-list">
+											<li><a class="opener" href="#"><span class="bg">Все</span></a></li>
+										</ul>
+										<div class="drop">
+											<div class="drop-bg">
+												<div class="scroll-holder">
+													<ul class="checkbox-list">
+														<li>
+															<input type="checkbox" data-add-option="all" data-name="name-3" name="checkbox-17" id="checkbox-17" checked="checked">
+															<label for="checkbox-17">Все</label>
+														</li>
+														<li>
+															<input type="checkbox" data-name="name-3" name="checkbox-18" id="checkbox-18">
+															<label for="checkbox-18">Александров Иван</label>
+														</li>
+														<li>
+															<input type="checkbox" data-name="name-3" name="checkbox-19" id="checkbox-19">
+															<label for="checkbox-19">Алексеев Захар</label>
+														</li>
+														<li>
+															<input type="checkbox" data-name="name-3" name="checkbox-20" id="checkbox-20">
+															<label for="checkbox-20">Давыдов Илья</label>
+														</li>
+														<li>
+															<input type="checkbox" data-name="name-3" name="checkbox-21" id="checkbox-21">
+															<label for="checkbox-21">Александров Иван</label>
+														</li>
+														<li>
+															<input type="checkbox" data-name="name-3" name="checkbox-22" id="checkbox-22">
+															<label for="checkbox-22">Алексеев Захар</label>
+														</li>
+														<li>
+															<input type="checkbox" data-name="name-3" name="checkbox-23" id="checkbox-23">
+															<label for="checkbox-23">Давыдов Илья</label>
+														</li>
+														<li>
+															<input type="checkbox" data-name="name-3" name="checkbox-24" id="checkbox-24">
+															<label for="checkbox-24">Александров Иван</label>
+														</li>
+													</ul>
+												</div>
+												<a class="btn-success" href="#">OK</a>
+											</div>
+										</div>
+									</div>
+								</fieldset>
+								<fieldset>
+									<h2>Зал</h2>
+									<div class="filter-box">
+										<ul class="filter-list">
+											<li><a class="opener" href="#"><span class="bg">Все</span></a></li>
+										</ul>
+										<div class="drop">
+											<div class="drop-bg">
+												<div class="scroll-holder">
+													<ul class="checkbox-list">
+														<li>
+															<input type="checkbox" data-add-option="all" data-name="name-4" name="checkbox-25" id="checkbox-25" checked="checked">
+															<label for="checkbox-25">Все</label>
+														</li>
+														<li>
+															<input type="checkbox" data-name="name-4" name="checkbox-26" id="checkbox-26">
+															<label for="checkbox-26">Большой зал</label>
+														</li>
+														<li>
+															<input type="checkbox" data-name="name-4" name="checkbox-27" id="checkbox-27">
+															<label for="checkbox-27">Малый зал</label>
+														</li>
+														<li>
+															<input type="checkbox" data-name="name-4" name="checkbox-28" id="checkbox-28">
+															<label for="checkbox-28">Зал пилатес</label>
+														</li>
+														<li>
+															<input type="checkbox" data-name="name-4" name="checkbox-29" id="checkbox-29">
+															<label for="checkbox-29">Большой зал</label>
+														</li>
+														<li>
+															<input type="checkbox" data-name="name-4" name="checkbox-30" id="checkbox-30">
+															<label for="checkbox-30">Малый зал</label>
+														</li>
+														<li>
+															<input type="checkbox" data-name="name-4" name="checkbox-31" id="checkbox-31">
+															<label for="checkbox-31">Зал пилатес</label>
+														</li>
+														<li>
+															<input type="checkbox" data-name="name-4" name="checkbox-32" id="checkbox-32">
+															<label for="checkbox-32">Большой зал</label>
+														</li>
+													</ul>
+												</div>
+												<a class="btn-success" href="#">OK</a>
+											</div>
+										</div>
+									</div>
+								</fieldset>
+								<fieldset>
+									<h2>услуги</h2>
+									<div class="filter-box">
+										<ul class="checkbox-list">
+											<li>
+												<input type="checkbox" id="checkbox-33" checked="checked">
+												<label for="checkbox-33">Базовые</label>
+											</li>
+											<li>
+												<input type="checkbox" id="checkbox-34">
+												<label for="checkbox-34">Дополнительные</label>
+											</li>
+										</ul>
+									</div>
+								</fieldset>
+							</div>
+						</div>
+						<a class="filter-opener" href="#"><span class="opened-text">Показать</span><span class="closed-text">Свернуть</span> фильтр</a>
+					</form>
+				</section>
+				<section class="top-bar">
+					<dl>
+						<dt>Неделя:</dt>
+						<dd>
+							<ul>
+								<li class="active"><a href="#">текущая</a></li>
+								<li><a href="#">следующая</a></li>
+							</ul>
+						</dd>
+					</dl>
+					<ul class="options-list">
+						<li><a href="#">Распечатать</a></li>
+						<li>
+							<dl class="alt">
+								<dt>Скачать:</dt>
+								<dd>
+									<ul>
+										<li><strong><a href="#">EXCEL</a></strong></li>
+										<li><strong><a href="#">PDF</a></strong></li>
+									</ul>
+								</dd>
+							</dl>
+						</li>
+					</ul>
+				</section>
+				<section class="schedule-holder">
+					<ul class="schedule-list">
+						<li>
+							<div class="heading">
+								<h2>Понедельник</h2>
+								<em class="date">12.11.2012</em>
+							</div>
+							<ul class="schedule-events">
+								<li style="border-color:#00a88e;">
+									<em class="time">7:30 - 8:45<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">Body Condition</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">настя</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Большой зал</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#00a88e;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#cc2291;">
+									<em class="time">9:00 - 9:45<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">YOGA</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">ОЛЯ</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Зал пилатес</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#cc2291;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#f86447;">
+									<em class="time">12:00 - 12:45<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">Interval-Step</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">юля</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Большой зал</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#f86447;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#f8a518;">
+									<em class="time">13:00 - 13:45<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">Abs+Flex</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">Юля</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Большой зал</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#f8a518;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#006699;">
+									<em class="time">14:00 - 14:45<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">Belly Dance</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">лена</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Большой зал</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#006699;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#99cc33;">
+									<em class="time">18:00 - 20:00<span>2ч</span></em>
+									<h3><a href="#" data-popup="training-info">Футбол</a></h3>
+									<em class="place alt"><a href="#" data-popup="place-info">Игровая площадка</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#99cc33;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#66cccc;">
+									<em class="time">18:30 - 19:15<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">С-Pilates</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">оля</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Зал пилатес</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#66cccc;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#00a88e;">
+									<em class="time">18:30 - 19:15<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">Body Low</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">Надежда</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Малый зал</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#00a88e;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#f86447;">
+									<em class="time">19:00 - 19:45<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">Interval-Step</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">юля</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Большой зал</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#f86447;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#cc2291;">
+									<em class="time">19:30 - 20:15<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">YOGA</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">ОЛЯ</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Зал пилатес</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#cc2291;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#666699;">
+									<em class="time">19:30 - 20:15<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">ZUMBA</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">Александр</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Малый зал</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#666699;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#cc9966;">
+									<em class="time">20:00 - 20:45<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">С-CYCLING</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">ЮЛЯ</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Зал сайкла</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#cc9966;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#3898e2;">
+									<em class="time">20:00 - 20:45<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">PUMP</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">Надежда / настя</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Большой зал</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#3898e2;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#ffda59;">
+									<em class="time">20:30 - 21:15<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">BOX</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">игорь</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Танцевальный зал</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#ffda59;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#00a88e;">
+									<em class="time">20:30 - 21:15<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">body ball</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">александр</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Малый зал</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#00a88e;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#00a88e;">
+									<em class="time">21:00 - 21:45<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">FLEX-40</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">настя</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Большой зал</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#00a88e;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<div class="heading">
+								<h2>вторник</h2>
+								<em class="date">13.11.2012</em>
+							</div>
+							<ul class="schedule-events">
+								<li style="border-color:#00a88e;">
+									<em class="time">9:00 - 9:45<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">pump</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">наталия / надежда</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Большой зал</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#00a88e;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#00a88e;">
+									<em class="time">10:00 - 10:45<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">flex-40</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">наталия</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Большой зал</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#00a88e;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#666699;">
+									<em class="time">12:00 - 12:45<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">zumba</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">александр</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Большой зал</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#666699;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#f86447;">
+									<em class="time">13:00 - 13:45<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">b-step</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">надежда</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Большой зал</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#f86447;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#00a88e;">
+									<em class="time">14:00 - 14:45<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">body low</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">наталия</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Большой зал</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#00a88e;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#cc2291;">
+									<em class="time">14:00 - 14:45<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">Yoga</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">оля</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Зал пилатес</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#cc2291;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#99cc33;">
+									<em class="time">18:00 - 19:30<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">волейбол</a></h3>
+									<em class="place alt"><a href="#" data-popup="place-info">Игровая площадка</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#99cc33;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#99cc99;">
+									<em class="time">8:30 - 19:15<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">gymstick</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">юля</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Большой зал</a> <a class="type new" title="Новинка" href="#">new</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#99cc99;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#00a88e;">
+									<em class="time">18:30 - 19:15<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">abs-30</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">наталия</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Малый зал</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#00a88e;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#006699;">
+									<em class="time">18:30 - 19:15<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">belly dance</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">Лена</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Танцевальный зал</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#006699;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#00a88e;">
+									<em class="time">19:00 - 19:45<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">body up</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">Настя</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Малый зал</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#00a88e;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#66cccc;">
+									<em class="time">19:00 - 19:45<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">b-pilates</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">Наталия</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Зал пилатес</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#66cccc;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#f86447;">
+									<em class="time">19:30 - 20:15<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">b-step</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">татьяна</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Большой зал</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#f86447;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#00a88e;">
+									<em class="time">20:00 - 20:45<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">nates+flex</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">настя</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Малый зал</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#00a88e;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#00a88e;">
+									<em class="time">20:00 - 20:45<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">flex-40</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">юля</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Зал пилатес</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#00a88e;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#ff66cc;">
+									<em class="time">20:30 - 21:15<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">bosu</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">Татьяна</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Большой зал</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#ff66cc;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#ff3300;">
+									<em class="time">20:30 - 21:15<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">Physical training</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">студия</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Зал перс.тренировок</a> <a class="type studio" href="#" title="Студия (доп.услуги)">studio</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#ff3300;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#00a88e;">
+									<em class="time">21:00 - 21:45<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">ABS-30</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">Настя</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Малый зал</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#00a88e;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<div class="heading">
+								<h2>среда</h2>
+								<em class="date">14.11.2012</em>
+							</div>
+							<ul class="schedule-events">
+								<li style="border-color:#f8a518;">
+									<em class="time">7:30 - 8:15<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">abs+flex</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">надежда</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Большой зал</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#f8a518;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#00a88e;">
+									<em class="time">9:00 - 9:45<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">body condition</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">наталия</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Большой зал</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#00a88e;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#cccc33;">
+									<em class="time">10:00 - 10:45<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">b-cycling</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">наталия</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Зал сайкла</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#cccc33;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#00a88e;">
+									<em class="time">11:00 - 11:45<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">body up</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">надежда</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Большой зал</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#00a88e;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#f86447;">
+									<em class="time">2:00 - 12:45<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">C-step</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">татьяна</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Большой зал</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#f86447;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#00a88e;">
+									<em class="time">13:00 - 13:45<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">body condition</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">татьяна</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Зал пилатес</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#00a88e;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#006699;">
+									<em class="time">14:00 - 14:45<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">Belly Dance</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">лена</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Большой зал</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#006699;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#ffda59;">
+									<em class="time">15:00 - 15:50<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">BOX</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">игорь</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Танцевальный залл</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#ffda59;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#993399;">
+									<em class="time">16:00 - 16:45<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">zumbatomic</a></h3>
+									<strong class="age">4-8 лет</strong>
+									<em class="place"><a href="#" data-popup="place-info">Студия</a> <a href="#" class="type studio" title="Студия (доп.услуги)">studio</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#993399;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#993399;">
+									<em class="time">17:00 - 17:45<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">zumbatomic</a></h3>
+									<strong class="age">9-12 лет</strong>
+									<em class="place"><a href="#" data-popup="place-info">Студия</a> <a href="#" class="type studio" title="Студия (доп.услуги)">studio</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#993399;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#99cc33;">
+									<em class="time">18:00 - 20:00<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">Футбол</a></h3>
+									<em class="place alt"><a href="#" data-popup="place-info">Игровая площадка</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#99cc33;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#66cccc;">
+									<em class="time">18:30 - 19:15<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">b-pilates</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">оля</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Зал пилатес</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#66cccc;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#00a88e;">
+									<em class="time">18:30 - 19:15<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">body ball</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">юля</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Малый зал</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#00a88e;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#00a88e;">
+									<em class="time">19:00 - 19:45<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">body condition</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">наталия</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Большой зал</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#00a88e;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#666699;">
+									<em class="time">19:00 - 19:45<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">zumba</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">ольга</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Большой зал</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#666699;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#cc2291;">
+									<em class="time">19:30 - 20:15<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">YOGA</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">оля</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Зал пилатес</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#cc2291;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#cc6666;">
+									<em class="time">19:30 - 20:15<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">mix-fight</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">александр</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Малый зал</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#cc6666;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#f86447;">
+									<em class="time">20:00 - 20:45<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">C-step</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">юля</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Большой зал</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#f86447;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#cccc33;">
+									<em class="time">20:00 - 20:45<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">b-cycling</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">наталия</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Зал сайкла</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#cccc33;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#ffda59;">
+									<em class="time">20:30 - 21:15<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">box</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">игорь</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Танцевальный зал</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#ffda59;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#de97c6;">
+									<em class="time">20:30 - 21:15<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">dirty dance</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">ольга</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Малый зал</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#de97c6;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#f8a518;">
+									<em class="time">21:00 - 21:45<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">ABS+Flex</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">александр</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Большой зал</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#f8a518;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<div class="heading">
+								<h2>четверг</h2>
+								<em class="date">15.11.2012</em>
+							</div>
+							<ul class="schedule-events">
+								<li style="border-color:#cc2291;">
+									<em class="time">9:00 - 9:45<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">YOGA</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">оля</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Зал пилатес</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#cc2291;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#00a88e;">
+									<em class="time">12:00 - 12:45<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">body ball</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">наталия</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Большой зал</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#00a88e;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#00a88e;">
+									<em class="time">13:00 - 13:45<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">pump</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">наталия / надежда</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Большой зал</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#00a88e;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#66cccc;">
+									<em class="time">14:00 - 14:45<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">c-pilates</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">надежда</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Зал пилатес</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#66cccc;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#f8a518;">
+									<em class="time">18:30 - 19:15<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">nates+flex</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">татьяна</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Малый зал</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#f8a518;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#cc2291;">
+									<em class="time">18:30 - 19:15<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">YOGA</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">оля</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Зал пилатес</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#cc2291;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#00a88e;">
+									<em class="time">19:00 - 19:45<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">pump</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">наталия / надежда</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Большой зал</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#00a88e;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#006699;">
+									<em class="time">19:00 - 19:45<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">Belly Dance</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">лена</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Танцевальный зал</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#006699;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#00a88e;">
+									<em class="time">19:30 - 20:15<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">body low</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">татьяна</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Малый зал</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#00a88e;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#00a88e;">
+									<em class="time">19:30 - 20:15<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">flex-40</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">Оля</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Зал пилатес</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#00a88e;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#99cc99;">
+									<em class="time">20:00 - 20:45<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">gymstick</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">надежда</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Большой зал</a> <a href="#" class="type new" title="Новинка">new</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#99cc99;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#cccc33;">
+									<em class="time">20:30 - 21:15<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">b-cycling</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">татьяна</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Зал сайкла</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#cccc33;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#cc2291;">
+									<em class="time">20:30 - 21:15<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">YOGA</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">настя</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Зал пилатес</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#cc2291;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<div class="heading">
+								<h2>пятница</h2>
+								<em class="date">16.11.2012</em>
+							</div>
+							<ul class="schedule-events">
+								<li style="border-color:#00a88e;">
+									<em class="time">7:30 - 8:15<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">pump</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">настя</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Большой Зал</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#00a88e;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#cc3300;">
+									<em class="time">9:00 - 9:45<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">bosu</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">Настя</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Большой зал</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#cc3300;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#99cc99;">
+									<em class="time">11:00 - 11:45<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">gymstick</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">юля</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Большой зал</a> <a href="#" class="type new" title="Новинка">new</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#99cc99;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#f86447;">
+									<em class="time">12:00 - 12:45<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">D-step</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">юля</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Большой зал</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#f86447;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#666699;">
+									<em class="time">13:00 - 13:45<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">zumba</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">александр</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Большой зал</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#666699;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#f8a518;">
+									<em class="time">14:00 - 14:45<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">Abs+flex</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">александр</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Большой зал</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#f8a518;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#993399;">
+									<em class="time">16:00 - 16:45<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">zumbatomic</a></h3>
+									<strong class="age">4-8 лет</strong>
+									<em class="place"><a href="#" data-popup="place-info">Студия</a> <a href="#" class="type studio" title="Студия (доп.услуги)">studio</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#993399;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#993399;">
+									<em class="time">17:00 - 17:45<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">zumbatomic</a></h3>
+									<strong class="age">9-12 лет</strong>
+									<em class="place"><a href="#" data-popup="place-info">Студия</a> <a href="#" class="type studio" title="Студия (доп.услуги)">studio</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#993399;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#66cccc;">
+									<em class="time">17:30 - 18:15<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">c-pilates</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">оля</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Зал пилатес</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#66cccc;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#cc3300;">
+									<em class="time">18:00 - 18:45<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">bosu</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">татьяна</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Большой зал</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#cc3300;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#cc2291;">
+									<em class="time">18:30 - 19:15<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">yoga</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">оля</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Зал пилатес</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#cc2291;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#00a88e;">
+									<em class="time">19:00 - 19:45<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">body condition</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">наталия</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Большой зал</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#00a88e;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#a4e9ff;">
+									<em class="time">18:30 - 19:15<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">jazz</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">александр</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Танцевальный сайкла</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#a4e9ff;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#f86447;">
+									<em class="time">19:00 - 19:45<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">c-step</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">татьяна</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Большой Зал</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#f86447;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#cccc33;">
+									<em class="time">19:00 - 19:45<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">b-cycling</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">наталия</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Зал сайкла</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#cccc33;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#99cc33;">
+									<em class="time">19:30 - 21:00<span>1,5 ч</span></em>
+									<h3><a href="#" data-popup="training-info">волейбол</a></h3>
+									<em class="place alt"><a href="#" data-popup="place-info">Игровая площадка</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#99cc33;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#00a88e;">
+									<em class="time">19:30 - 20:15<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">flex-40</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">александр</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Зал пилатес</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#00a88e;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#ffda59;">
+									<em class="time">20:00 - 20:45<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">box</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">игорь</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Танцевальный зал</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#ffda59;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#ff3300;">
+									<em class="time">20:30 - 21:15<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">Physical training</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">студия</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Зал перс.тренировок</a> <a class="type studio" href="#" title="Студия (доп.услуги)">studio</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#ff3300;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<div class="heading">
+								<h2>суббота</h2>
+								<em class="date">17.11.2012</em>
+							</div>
+							<ul class="schedule-events">
+								<li style="border-color:#cc2291;">
+									<em class="time">11:00 - 11:45<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">yoga</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">Оля</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Зал пилатес</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#cc2291;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#f86447;">
+									<em class="time">12:00 - 12:45<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">C-step</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">надежда</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Большой зал</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#f86447;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#99cc99;">
+									<em class="time">13:00 - 13:45<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">gymstick</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">надежда</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Большой зал</a> <a href="#" class="type new" title="Новинка">new</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#99cc99;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#00a88e;">
+									<em class="time">13:00 - 13:45<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">body condition</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">настя</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Малый зал</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#00a88e;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#996633;">
+									<em class="time">14:00 - 14:45<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">D-CYCLING</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">Елена</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Зал сайкла</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#996633;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#00a88e;">
+									<em class="time">14:00 - 14:45<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">flex-40</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">настя</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Большой зал</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#00a88e;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#de97c6;">
+									<em class="time">15:00 - 15:50<span>50 мин</span></em>
+									<h3><a href="#" data-popup="training-info">dirty dance</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">Лена</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Танцевальный зал</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#de97c6;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<div class="heading">
+								<h2>воскресенье</h2>
+								<em class="date">18.11.2012</em>
+							</div>
+							<ul class="schedule-events">
+								<li style="border-color:#f86447;">
+									<em class="time">11:00 - 11:45<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">b-step</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">настя</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Большой зал</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#f86447;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#00a88e;">
+									<em class="time">12:00 - 12:45<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">pump</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">юля / настя</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Большой зал</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#00a88e;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#ffda59;">
+									<em class="time">12:00 - 12:45<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">BOX</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">игорь</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Танцевальный зал</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#ffda59;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#666699;">
+									<em class="time">13:00 - 13:45<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">zumba</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">zumba</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Малый зал</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#666699;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#f86447;">
+									<em class="time">13:00 - 13:45<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">D-step</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">юля</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Большой зал</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#f86447;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#00a88e;">
+									<em class="time">14:00 - 14:45<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">body up</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">татьяна</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Большой зал</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#00a88e;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#00a88e;">
+									<em class="time">14:00 - 14:45<span>45 мин</span></em>
+									<h3><a href="#" data-popup="training-info">flex-40</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">александр</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Зал пилатес</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#00a88e;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+								<li style="border-color:#66cccc;">
+									<em class="time">15:00 - 15:50<span>50 мин</span></em>
+									<h3><a href="#" data-popup="training-info">b-pilates</a></h3>
+									<strong class="name"><a href="#" data-popup="coach-info">татьяна</a></strong>
+									<em class="place"><a href="#" data-popup="place-info">Зал пилатес</a></em>
+									<div class="popup place-info">
+										<img class="alignleft" src="images/img-info-place-1.jpg" alt="" width="130" height="130">
+										<div class="wrap">
+											<h3>большой зал</h3>
+											<p>Расположен на первом этаже клуба. Предназначен для занятия активными видами спорта. Мягкое покрытие пола. Оснащен зеркалами по всему периметру.</p>
+											<p>Площадь — 150 кв.м.</p>
+										</div>
+									</div>
+									<div class="popup coach-info">
+										<img class="alignleft" src="images/img-info-coach-1.jpg" alt="" width="90" height="105">
+										<div class="wrap">
+											<h3>иванов александр</h3>
+											<em class="position">Инструктор тренажерного зала</em>
+											<p>Сертифицированный инструктор тренажерного зала Ассоциацией Профессионалов Фитнеса (FPA) по бодибилдингу и фитнесу, функциональному тренингу и стретчингу. Кандидат в Мастера Спорта (КМС) по футболу</p>
+											<p>Опыт работы в фитнес индустрии – более 8 лет.</p>
+										</div>
+									</div>
+									<div class="popup training-info" style="border-color:#66cccc;">
+										<div class="wrap">
+											<h3>ZUMBA</h3>
+											<p>Силовой класс, направленный на тренировку мышц ног, ягодиц и брюшного пресса. Нагрузка средней интенсивности. Рекомендуется для среднего и высокого уровня подготовленности</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<dl class="schedule-info">
+					<dt>условные обозначения:</dt>
+					<dd>
+						<ul>
+							<li class="new">новинка</li>
+							<li class="studio">Студия (доп.услуги)</li>
+						</ul>
+					</dd>
+				</dl>
+			</div>
+			<section class="promo">
+				<div class="col">
+					<a href="#"><img src="images/img-promo-1.jpg" alt="" width="318" height="108" ></a>
+				</div>
+				<div class="col">
+					<a href="#"><img src="images/img-promo-2.jpg" alt="" width="318" height="108" ></a>
+				</div>
+				<div class="col">
+					<a href="#"><img src="images/img-promo-3.jpg" alt="" width="318" height="108" ></a>
+				</div>
+			</section>
+		</div>
+		<footer class="footer">
+			<div class="holder">
+				<nav class="footer-nav">
+					<ul>
+						<li><a href="#">Контакты</a></li>
+						<li><a href="#">Правила</a></li>
+						<li><a href="#">Политика</a></li>
+						<li><a href="#">Вакансии</a></li>
+						<li><a href="#">Блог</a></li>
+						<li><a class="map" href="#">Заморозка карты</a></li>
+					</ul>
+				</nav>
+				<dl class="social">
+					<dt>Читайте нас:</dt>
+					<dd>
+						<ul>
+							<li><a href="#" class="vkontakte">Vkontakte</a></li>
+							<li><a href="#" class="facebook">Facebook</a></li>
+							<li><a href="#" class="twitter">Twitter</a></li>
+							<li><a href="#" class="livejournal">Livejournal</a></li>
+						</ul>
+					</dd>
+				</dl>
+				<ul class="social-btns">
+					<li><img src="images/btn-facebook.gif" alt="" class="placeholder" width="126" height="20"></li>
+				</ul>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

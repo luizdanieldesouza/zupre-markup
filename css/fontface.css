@@ -1,0 +1,40 @@
+@font-face{
+	font-family: 'Circe Regular';
+	src: url('../fonts/circe-regular.eot');
+	src: url('../fonts/circe-regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/circe-regular.woff') format('woff'),
+		url('../fonts/circe-regular.ttf') format('truetype'),
+		url('../fonts/circe-regular.svg#Circe') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face{
+	font-family: 'Circe Bold';
+	src: url('../fonts/circe-bold.eot');
+	src: url('../fonts/circe-bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/circe-bold.woff') format('woff'),
+		url('../fonts/circe-bold.ttf') format('truetype'),
+		url('../fonts/circe-bold.svg#CirceBold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face{
+	font-family: 'Circe Extra Bold';
+	src: url('../fonts/circe-extrabold.eot');
+	src: url('../fonts/circe-extrabold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/circe-extrabold.woff') format('woff'),
+		url('../fonts/circe-extrabold.ttf') format('truetype'),
+		url('../fonts/circe-extrabold.svg#CirceExtraBold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face{
+	font-family: 'Circe Light';
+	src: url('../fonts/circe-light.eot');
+	src: url('../fonts/circe-light.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/circe-light.woff') format('woff'),
+		url('../fonts/circe-light.ttf') format('truetype'),
+		url('../fonts/circe-light.svg#CirceLight') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
