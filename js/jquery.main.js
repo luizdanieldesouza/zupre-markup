@@ -146,7 +146,7 @@ $(function(){
 		$('.slide-range').each(function(){
 			$(this).slider({
 				range: true,
-				min: 0000,
+				min: 700,
 				max: 2400,
 				step: 50,
 				values: [ parseInt($('.main-filter .filter-list .bg[data-default-first-time]').attr('data-default-first-time')) , parseInt($('.main-filter .filter-list .bg[data-default-second-time]').attr('data-default-second-time')) ],
