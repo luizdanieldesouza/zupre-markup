@@ -181,19 +181,7 @@ form,fieldset{
 	width:485px;
 }
 *+ html .cards-list .holder{display:inline;}
-.cards-list dl{
-	margin:0;
-	overflow:hidden;
-}
-.cards-list dt{
-	float:left;
-	font-weight:bold;
-	margin:0 4px 0 0;
-}
-.cards-list dd{
-	overflow:hidden;
-	margin:0;
-}
+.cards-list .card-info p{margin:0;}
 /* header styles end */
 /* main styles start */
 ul{
