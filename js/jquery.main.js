@@ -45,8 +45,8 @@ $(function(){
 			tabs = tabs.add($($(this).attr('href')).hide());
 		});
 		$(curLink.attr('href')).show();
-		links.click(function(){
-			if(!flag){
+		links.click(function(e){
+			if(!flag && !$($(this).attr('href')).is(':visible')){
 				var cur = $(this);
 				flag = true;
 				items.removeClass(activeClass);
@@ -56,6 +56,7 @@ $(function(){
 					$(curLink.attr('href')).fadeIn(animSpeed , function(){flag = false});
 				});
 			}
+			e.preventDefault();
 		});
 	}
 
