@@ -1767,6 +1767,16 @@ ul li{
 .browsers-list li .opera{background:url(../images/ico-browsers.png) no-repeat -200px 0;}
 .browsers-list li .safari{background:url(../images/ico-browsers.png) no-repeat -299px 0;}
 .browsers-list li .internet-explorer{background:url(../images/ico-browsers.png) no-repeat -397px 0;}
+.visual{
+	position:relative;
+	margin:-4px -13px -14px;
+	overflow:hidden;
+}
+.visual a{
+	display:block;
+	cursor:pointer;
+}
+.visual img{display:block;}
 /* main styles end */
 /* footer styles start */
 .footer{
