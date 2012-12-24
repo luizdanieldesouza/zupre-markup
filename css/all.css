@@ -171,9 +171,10 @@ form,fieldset{
 	border-top:1px solid #ededed;
 }
 .content .cards-list h2{margin-bottom:2px;}
-.cards-list img{
+.content .cards-list img{
 	margin:0 18px 0 0;
 	vertical-align:middle;
+	display:inline;
 }
 .cards-list .holder{
 	display:inline-block;
@@ -197,6 +198,7 @@ ul li{
 }
 .about-page li{background:url(../images/bullet-about-page.png) no-repeat 0 5px;}
 .contacts-page li{background:url(../images/bullet-contacts-page.png) no-repeat 0 5px;}
+.content .alignleft,
 .alignleft{
 	float:left;
 	margin:0 14px 0 0;
@@ -793,6 +795,10 @@ ul li{
 	float:left;
 	width:685px;
 	padding:12px 0 0;
+}
+.content img{
+	display:block;
+	margin:0 auto 15px;
 }
 .twocolumn.alter .content{width:650px;}
 .content h2{
