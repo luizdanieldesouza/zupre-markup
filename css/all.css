@@ -181,6 +181,7 @@ form,fieldset{
 	width:485px;
 }
 *+ html .cards-list .holder{display:inline;}
+.cards-list .card-info{width:100%;}
 .cards-list .card-info p{margin:0;}
 /* header styles end */
 /* main styles start */
@@ -595,7 +596,6 @@ ul li{
 	color:#333;
 	text-decoration:none;
 }
-.schedule-list .place a:hover,
 .schedule-list .name a:hover,
 .schedule-list h3 a:hover{
 	text-decoration:none;
@@ -625,10 +625,6 @@ ul li{
 	font:11px Arial, Helvetica, sans-serif;
 	display:block;
 	position:relative;
-}
-.schedule-list .place a{
-	color:#666;
-	text-decoration:none;
 }
 .schedule-list .place .type{
 	position:absolute;

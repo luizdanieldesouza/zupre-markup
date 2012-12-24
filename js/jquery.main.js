@@ -110,7 +110,7 @@ $(function(){
 		var items = $('.schedule-list ul li');
 		items.each(function(){
 			var cur = $(this),
-				links = cur.find('h3 a, .name a, .place a').not('.type');
+				links = cur.find('h3 a, .name a, .place span').not('.type');
 			links.mouseenter(function(){
 				cur.css({zIndex: 1});
 				cur.parent().parent().css({zIndex: 1});
