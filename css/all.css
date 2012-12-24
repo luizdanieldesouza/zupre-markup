@@ -637,6 +637,7 @@ ul li{
 	text-indent:-9999px;
 	overflow:hidden;
 }
+.schedule-list .place .type + .type{right:17px;}
 .schedule-list .place .type.new{background:url(../images/ico-new.png) no-repeat;}
 .schedule-list .place .type.studio{background:url(../images/ico-studio.png) no-repeat 1px 2px;}
 .schedule-list .popup{
