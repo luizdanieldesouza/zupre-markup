@@ -29,6 +29,37 @@ $(function(){
 		window.open($(this).attr('href'));
 		e.preventDefault();
 	});
+	ajaxSchedule();
+
+	function ajaxSchedule(){
+		var form = $('.main-filter form');
+		if(!form.length) return;
+		var btnSubmit = form.find('input:submit'),
+			btnSuccess = form.find('.btn-success'),
+			url = form.attr('action');
+		form.submit(function(e){e.preventDefault();});
+		btnSuccess.click(function(e){
+			sendRequest(form.serialize() , form.attr('method'));
+			e.preventDefault();
+		});
+		function sendRequest(data , method){
+			data += '&time=' + $('.main-filter .filter-list .bg[data-default-second-time]').text().replace(/\s+/g, '');
+			if(!url || url == '' || url == '#'){
+				alert('url = ' + url + '     data = ' + data);
+				return;
+			}
+			$.ajax({
+				url:url,
+				type:method,
+				data:data,
+				dataType:'html',
+				success:function(){},
+				error:function(){
+					alert('an AJAX error occured!');
+				}
+			});
+		}
+	}
 
 	function mapTabs(){
 		var list = $('.contacts-section .map-type');
