@@ -1798,7 +1798,7 @@ ul li{
 	text-decoration:none;
 }
 *+ html .footer-nav ul a{display:inline;}
-.footer-nav ul a.map{border-bottom:1px dotted #999;}
+.footer-nav ul a.map{background:url(../images/sep-dotted.png) repeat-x 0 90%;}
 .footer .social{
 	float:right;
 	margin:2px 0 0 29px;
