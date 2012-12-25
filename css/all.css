@@ -1598,18 +1598,9 @@ ul li{
 	margin:0 0 12px;
 	overflow:hidden;
 	font-size:15px;
-}
-.contacts-section .contacts-list dt{
-	float:left;
-	margin:0 3px 0 0;
-	font-weight:bold;
 	color:#000;
 }
-.contacts-section .contacts-list dd{
-	overflow:hidden;
-	margin:0;
-	padding:0 0 3px;
-}
+.contacts-section .contacts-list p{margin:0 0 3px;}
 .contacts-section .contacts-list address{font-style:normal;}
 .contacts-section .add-info{
 	position:relative;
