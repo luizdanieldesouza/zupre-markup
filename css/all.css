@@ -406,6 +406,7 @@ ul li{
 	overflow:auto;
 	margin:0 0 7px;
 }
+.main-filter .scroll-holder.alt{height:192px;}
 .main-filter .btn-success{
 	display:inline-block;
 	min-width:63px;
