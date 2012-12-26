@@ -6,19 +6,28 @@ $(function(){
 	initialize();
 	function initialize() {
 		if ($('#google-map').length) {
-			var map = new GMap2(document.getElementById("google-map"));
-			map.setCenter(new GLatLng(55.797171042593654, 37.58219046032711), 14);
-			map.addControl(new GLargeMapControl());
-			map.addControl(new GMapTypeControl());
-			var point = new GLatLng(55.797171042593654, 37.58109016032711);
-			var myexIcon = new GIcon();
-			myexIcon.image = 'images/ico-map-point.png';
-			myexIcon.iconSize = new GSize(32, 31);
-			myexIcon.iconAnchor = new GPoint(19, 14);
-			myexIcon.infoWindowAnchor = new GPoint(5, 5);
-			var markerOptions = {icon:myexIcon};
-			map.addOverlay(new GMarker(point , markerOptions));
+			var latlng = new google.maps.LatLng(55.797171042593654, 37.58219046032711);
+			var myOptions = {
+				zoom: 14,
+				center: latlng,
+				mapTypeControl: true,
+				mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU},
+				navigationControl: true,
+				navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},
+				mapTypeId: google.maps.MapTypeId.ROADMAP
+			};
+			var map = new google.maps.Map(document.getElementById("google-map"), myOptions);
+			var companyImage = new google.maps.MarkerImage('images/ico-map-point.png',new google.maps.Size(32,31),new google.maps.Point(0,0),new google.maps.Point(19,14));
+			var companyPos = new google.maps.LatLng(55.797171042593654, 37.58109016032711);
+			var companyMarker = new google.maps.Marker({
+				position: companyPos,
+				map: map,
+				icon: companyImage,
+				zIndex: 3
+			});
 		}
+		
+	
 	}
 	mapTabs();
 	initPlugins();
@@ -72,10 +81,12 @@ $(function(){
 		if(items.filter('.' + activeClass).length > 1) items.removeClass(activeClass).eq(0).addClass(activeClass);
 		var curLink = items.filter('.' + activeClass).find('a'),
 			tabs = $();
-		links.each(function(){
-			tabs = tabs.add($($(this).attr('href')).hide());
-		});
-		$(curLink.attr('href')).show();
+		setTimeout(function(){
+			links.each(function(){
+				tabs = tabs.add($($(this).attr('href')).hide());
+			});
+			$(curLink.attr('href')).show();
+		} , 500 , true);
 		links.click(function(e){
 			if(!flag && !$($(this).attr('href')).is(':visible')){
 				var cur = $(this);
