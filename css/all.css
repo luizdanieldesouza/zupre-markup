@@ -381,7 +381,10 @@ ul li{
 	height:14px;
 	width:15px;
 }
-.main-filter .checkbox-list label{float:left;}
+.main-filter .checkbox-list label{
+	display:block;
+	overflow:hidden;
+}
 .main-filter .filter-box.active .drop{
 	top:0;
 	left:0;
