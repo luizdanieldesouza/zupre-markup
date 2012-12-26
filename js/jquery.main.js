@@ -48,7 +48,9 @@ $(function(){
 			url = form.attr('action');
 		form.submit(function(e){e.preventDefault();});
 		btnSuccess.click(function(e){
-			sendRequest(form.serialize() , form.attr('method'));
+			setTimeout(function(){
+				sendRequest(form.serialize() , form.attr('method'));
+			},100,true);
 			e.preventDefault();
 		});
 		function sendRequest(data , method){
@@ -69,6 +71,52 @@ $(function(){
 			});
 		}
 	}
+
+	function openFilterDrop(){
+		var box = $('.main-filter .filter-box'),
+			activeClass = 'active' , temp = [] , filterList = $() , t,
+			defaultClass = 'checkboxArea', checkedClass = 'checkboxAreaChecked';
+		box.each(function(){
+			var cur = $(this),
+				opener = cur.find('.opener , .filter-list li a'),
+				closeBtn = cur.find('.btn-success'),
+				drop = cur.find('.drop');
+			opener.die('click');
+			opener.live('click',function(e){
+				if(cur.hasClass(activeClass)) cur.removeClass(activeClass);
+				else{
+					box.removeClass(activeClass);
+					cur.addClass(activeClass);
+				}
+				e.preventDefault();
+			});
+			closeBtn.die('click');
+			closeBtn.live('click',function(e){
+				temp = [];
+				if(cur.find('.checkbox-list').length){
+					filterList = cur.find('.filter-list');
+					filterList.find('li:first .bg').text(cur.find('.checkbox-list input:checkbox[checked=checked]').eq(0).parent().find('label').text());
+					cur.find('.checkbox-list input:checkbox[checked=checked]').each(function(){temp.push($(this).parent().find('label').text());});
+					filterList.find('>li').not(':first').remove();
+					if(temp.length + 1 == cur.find('.checkbox-list > li').length){
+						t = cur.find('.checkbox-list > li .' + defaultClass);
+						cur.find('.checkbox-list > li .' + checkedClass).removeClass(checkedClass).addClass(defaultClass).parent().find('input:checkbox').removeAttr('checked');
+						t.removeClass(defaultClass).addClass(checkedClass).parent().find('input:checkbox').attr('checked', 'checked');
+						filterList.find('li:first .bg').text(cur.find('.checkbox-list input:checkbox[checked=checked]').parent().find('label').text());
+					}
+					else if(temp.length > 1) for(var i = 1; i < temp.length; i++){
+						if($('.main-filter').hasClass('alt')) filterList.prepend('<li><span class="bg"><a href="#">' + temp[i] + ',' + '</a></span></li>');
+						else filterList.append('<li><span class="bg"><a href="#">' + temp[i] + '</a></span></li>');
+					};
+				}
+				else filterList = cur.find('.filter-list > li:first .bg').text(cur.find('.slide-range a:first span').text() + ' - ' + cur.find('.slide-range a:last span').text());
+				cur.removeClass(activeClass);
+				e.preventDefault();
+			});
+		});
+		box.click(function(e){e.stopPropagation();});
+		$('html').click(function(){box.removeClass(activeClass);});
+	};
 
 	function mapTabs(){
 		var list = $('.contacts-section .map-type');
@@ -109,45 +157,6 @@ $(function(){
 		else{timeString = timeString + ':00'}
 		return timeString;
 	}
-
-	function openFilterDrop(){
-		var box = $('.main-filter .filter-box'),
-			activeClass = 'active' , temp = [] , filterList = $();
-		box.each(function(){
-			var cur = $(this),
-				opener = cur.find('.opener , .filter-list li a'),
-				closeBtn = cur.find('.btn-success'),
-				drop = cur.find('.drop');
-			opener.die('click');
-			opener.live('click',function(e){
-				if(cur.hasClass(activeClass)) cur.removeClass(activeClass);
-				else{
-					box.removeClass(activeClass);
-					cur.addClass(activeClass);
-				}
-				e.preventDefault();
-			});
-			closeBtn.die('click');
-			closeBtn.live('click',function(e){
-				temp = [];
-				if(cur.find('.checkbox-list').length){
-					filterList = cur.find('.filter-list');
-					filterList.find('li:first .bg').text(cur.find('.checkbox-list input:checkbox[checked=checked]').eq(0).parent().find('label').text());
-					cur.find('.checkbox-list input:checkbox[checked=checked]').each(function(){temp.push($(this).parent().find('label').text());});
-					filterList.find('>li').not(':first').remove();
-					if(temp.length > 1) for(var i = 1; i < temp.length; i++){
-						if($('.main-filter').hasClass('alt')) filterList.prepend('<li><span class="bg"><a href="#">' + temp[i] + ',' + '</a></span></li>');
-						else filterList.append('<li><span class="bg"><a href="#">' + temp[i] + '</a></span></li>');
-					};
-				}
-				else filterList = cur.find('.filter-list > li:first .bg').text(cur.find('.slide-range a:first span').text() + ' - ' + cur.find('.slide-range a:last span').text());
-				cur.removeClass(activeClass);
-				e.preventDefault();
-			});
-		});
-		box.click(function(e){e.stopPropagation();});
-		$('html').click(function(){box.removeClass(activeClass);});
-	};
 
 	function openPopups(){
 		var items = $('.schedule-list ul li');
