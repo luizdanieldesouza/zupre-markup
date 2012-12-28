@@ -1148,7 +1148,8 @@ function initLightbox() {
 			g.outerWidth();
 			var p = g.outerHeight(),
 				r = j.height();
-			v < l ? f.css("width", l) : f.css("width", "100%");
+			f.width('100%');
+			//v < l ? f.css("width", l) : f.css("width", "100%");
 			o < r ? f.css("height", r) : f.css("height", o);
 			g.css({
 				position: "absolute",
