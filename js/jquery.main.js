@@ -26,8 +26,6 @@ $(function(){
 				zIndex: 3
 			});
 		}
-		
-	
 	}
 	mapTabs();
 	initPlugins();
@@ -159,7 +157,8 @@ $(function(){
 	}
 
 	function openPopups(){
-		var items = $('.schedule-list ul li');
+		var items = $('.schedule-list ul li'),
+			win = $(window);
 		items.each(function(){
 			var cur = $(this),
 				links = cur.find('h3 a, .name a, .place span').not('.type');
@@ -168,8 +167,15 @@ $(function(){
 				cur.parent().parent().css({zIndex: 1});
 				cur.find($('.' + $(this).attr('data-popup'))).css({
 					left: $(this).width() + 10,
+					marginLeft: 0,
 					top: $(this).parent().position().top
 				}).show();
+				if((win.width() - cur.find($('.' + $(this).attr('data-popup'))).offset().left) < cur.find($('.' + $(this).attr('data-popup'))).outerWidth(true)){
+					cur.find($('.' + $(this).attr('data-popup'))).css({
+						left: 0,
+						marginLeft: -cur.find($('.' + $(this).attr('data-popup'))).outerWidth(true)
+					});
+				}
 			}).mouseleave(function(){
 				cur.find($('.' + $(this).attr('data-popup'))).hide();
 				items.css({zIndex: 0});
@@ -303,6 +309,16 @@ function initPlugins(){
 	});
 	initLightbox();
 	initDatepicker();
+	$('.visual').fadeGallery({
+		slideElements: 'ul.slideset > li',
+		autoRotation: true,
+		btnNext: '.switcher-holder a.btn-next',
+		btnPrev: '.switcher-holder a.btn-prev',
+		autoHeight: true,
+		switchTime:3000,
+		duration:650,
+		IE: true
+	});
 };
 
 function initDatepicker(){
@@ -872,7 +888,7 @@ jQuery.fn.fadeGallery = function(_options){
 				return false;
 			});
 		}
-
+		autoSlide();
 		// gallery animation
 		function prevSlide() {
 			_prevIndex = _currentIndex;
