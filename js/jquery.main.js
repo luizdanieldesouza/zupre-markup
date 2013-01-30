@@ -888,6 +888,7 @@ jQuery.fn.fadeGallery = function(_options){
 				return false;
 			});
 		}
+		if(_autoHeight) _slides.eq(_currentIndex).parent().animate({height:_slides.eq(_currentIndex).show().outerHeight(true)},{duration:_duration,queue:false});
 		autoSlide();
 		// gallery animation
 		function prevSlide() {
