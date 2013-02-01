@@ -382,6 +382,7 @@ ul li{
 	width:15px;
 }
 .main-filter .checkbox-list label{
+	float: left;
 	display:block;
 	overflow:hidden;
 }
@@ -455,6 +456,16 @@ ul li{
 	bottom:-17px;
 	left:-6px;
 	font:bold 10px Arial, Helvetica, sans-serif;
+	-webkit-transition: left .2s;
+	-moz-transition: left .2s;
+	-o-transition: left .2s;
+	transition: left .2s;
+}
+.main-filter .slide-range .ui-slider-handle.left span {
+	left: 0;
+}
+.main-filter .slide-range .ui-slider-handle.right span {
+	left: -12px;
 }
 .main-filter .slide-range .ui-slider-range{
 	height:7px;
