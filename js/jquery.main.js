@@ -200,15 +200,6 @@ $(function(){
 	};
 
 	function initSlider(){
-	    var sliderRangeWidth, sliderHandleWidth, positionLabels;
-
-	    positionLabels = function($sliderHandler) {
-	    	var offsetLeft = $($sliderHandler).position()['left'];
-
-		    $($sliderHandler)[offsetLeft < sliderHandleWidth/2 ? 'addClass' : 'removeClass']('left');
-		    $($sliderHandler)[offsetLeft > (sliderRangeWidth-sliderHandleWidth/2) ? 'addClass' : 'removeClass']('right');
-	    }
-
 		$('.slide-range').each(function(){
 			$(this).slider({
 				range: true,
@@ -217,21 +208,11 @@ $(function(){
 				step: 50,
 				values: [ parseInt($('.main-filter .filter-list .bg[data-default-first-time]').attr('data-default-first-time')) , parseInt($('.main-filter .filter-list .bg[data-default-second-time]').attr('data-default-second-time')) ],
 				create: function( event, ui ){
-					$(this).removeClass('ui-widget ui-widget-content ui-corner-all');
-					$(this).find('.ui-slider-handle').removeClass('ui-state-default ui-corner-all');
-					$(this).find('.ui-slider-range').removeClass('ui-widget-header');
 					$(this).find('a').append('<span></span>');
-					
-					sliderRangeWidth = $(this).width();
-					sliderHandleWidth = $(this).find('.ui-slider-handle').width();
-					positionLabels(this);
 				},
 				slide: function( event, ui ){
 					$(this).find('a:first span').text(intToTime(ui.values[0]));
 					$(this).find('a:last span').text(intToTime(ui.values[1]));
-				},
-				change: function( event, ui) {
-					positionLabels(ui.handle);
 				}
 			});
 			$(this).find('a:first span').text(intToTime($(this).slider('values' , 0)));
